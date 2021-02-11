@@ -1,0 +1,44 @@
+<div class="index-page">
+    
+   <div class="thred-contents">
+        <h1 class="table-title">Books</h1>
+        <table class="index-table">
+            <tr height="50" >
+                <th class=table-column>Title</th>
+                <th class=table-column>Body</th>
+                <th></th>
+            </tr>
+            <% @books.each do |book| %>
+                <tr class="table-date">
+                    <td class="data"><%= book.title %></td>
+                    <td class="data"><%= book.body %></td>
+                    <td>
+                        <span class="action-btn"><%= link_to 'Show', book_path(book.id), class: "btn" %></span>
+                        <span class="action-btn"><%= link_to 'Edit', edit_book_path(book.id), class: "btn" %></span>
+                        <span class="action-btn"><%= link_to 'Destroy', book_path(book.id), method: :delete, "data-confirm" => "re you sure?", class: "btn" %></span>
+                    </td>
+                </tr>
+            <% end %>
+        </table>
+    </div>
+    <div class="index-form">
+        <div class="error">
+            <% if @book.errors.any? %>
+              <%= @book.errors.count %>errors prohibited this book from being saved:
+              <% @book.errors.full_messages.each do |message| %>
+                <%= message %>
+              <% end %>
+            <% end %>
+        </div>
+        <%= form_with model: @book, url:"/books", local:true do |f| %>
+            <h3 class="index-form-column">title</h3>
+            <p class="index-form-title">
+                <%= f.text_field :title, class: "i-title" %>
+            </p>
+            <h3 class="index-form-column">body</h3>
+            <p class="index-form-body">
+            <%= f.text_area :body, class: "i-body" %></p>
+            <p class="index-form-btn"><%= f.submit 'Create Book', class: "i-btn" %></p>
+        <% end %>
+    </div>
+ </div>

@@ -1,0 +1,26 @@
+<div class="show-main">
+  
+  <P class="notice"><%= notice %></P>
+  
+  <div class="show-contents"> 
+    <table class="show-table">
+      <tr>
+        <th class="show-column-title">title:</th>
+        <td class="show-title"><%= @book.title %></td>
+      </tr>
+    </table>
+    <table class="show-table">
+      <tr>
+        <th class="show-column-body">body:</th>
+        <td class="show-body"><%= @book.body %></td>
+      </tr>
+    </table>
+
+    <span class="show-btn" >
+      <%= link_to 'Edit', edit_book_path(@book),class: "btn" %>
+    </span>
+    <span class="show-btn">
+      <%= link_to 'Back', books_path, class: "btn" %>
+    </span>
+  </div>
+</div>

@@ -1,0 +1,237 @@
+// Place all the styles related to the books controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+//index 
+
+.index-page {
+    width: 100%;
+}
+
+.thred-contents{
+    background-image: url(img/library.jpg);
+    background-size: cover;
+    padding: 100px 0 150px;
+}
+
+.table-title {
+    margin-left: 20%;
+    color: #fff;
+}
+
+.index-table {
+   width: 80%;
+   margin-left: 20%;
+}
+
+.table-column {
+    background-color: #0045ff;
+    border-radius: 15px;
+    width:300px;
+    color: #fff;
+}
+
+.table-date {
+    height: 40px;
+}
+
+.table-date td {
+    overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   max-width: 0;
+}
+
+.data {
+   background-color: rgba(255,255,255,0.7); 
+}
+
+.action-btn {
+    height: 30px;
+    background-color: #0045ff;
+    padding: 5px;
+    border-radius: 10px;
+    .btn {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.index-form {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.index-form-column {
+    width: 200px;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0045ff;
+    color: #fff;
+    margin-right: 200px;
+    margin-bottom: 10px;
+}
+
+.index-form-title {
+    .i-title{
+    width: 30%;
+    height: 40px;
+    margin-bottom: 20px;
+    }
+}
+
+.index-form-body {
+    .i-body{
+    width: 30%;
+    height: 200px;
+    }
+}
+
+.index-form-btn{
+    .i-btn{
+    height: 40px;
+    background-color: #0045ff;
+    color: #fff;
+    padding: 10px;
+    }
+}
+
+// show
+
+.show-main {
+    height: 800px;
+    background-image: url(img/library.jpg);
+    background-size: cover;
+}
+
+.notice {
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0,255,30,0.8);
+    color: #000;
+}
+
+.show-contents {
+    padding: 100px 0 150px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.show-column-title {
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0045ff;
+    color: #fff;
+}
+
+.show-column-body {
+    height: 40px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0045ff;
+    color: #fff;
+}
+
+.show-title {
+    background-color: rgba(255,255,255,0.7);
+    width: 300px;
+    word-break: break-all;
+}
+
+.show-body {
+    background-color: rgba(255,255,255,0.7);
+    width: 600px;
+    height: 300px;
+    word-break: break-all;
+}
+
+.show-btn {
+    text-align: center;
+    display: inline-block;
+    padding: 30px 0 0;
+    .btn {
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: #0045ff;
+        color: #fff;
+    }
+}
+
+// edit
+
+.edit-main {
+    background-image: url(img/library.jpg);
+    background-size: cover;
+    padding:100px 0;
+}
+
+.edit-form {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.edit-column {
+    display: inline-block;
+    height: 40px;
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #0045ff;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.edit-form-title {
+    .e-title{
+    width: 50%;
+    height: 40px;
+    margin-bottom: 15px;
+    }
+}
+
+.edit-form-body {
+    .e-body{
+    width: 50%;
+    height: 300px;
+    }
+}
+
+.edit-form-btn{
+    .e-btn{
+    height: 40px;
+    background-color: #0045ff;
+    color: #fff;
+    padding: 10px;
+    }
+}
+
+.edit-action {
+    text-align: center;
+}
+
+.edit-btn {
+    display: inline-block;
+    padding: 30px 0 0;
+    .btn {
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: #0045ff;
+        color: #fff;
+    }
+}
+
+.error {
+    background-color: rgba(0,255,30,0.8);
+    color: #000;
+}

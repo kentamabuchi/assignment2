@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    
+    <script src="https://kit.fontawesome.com/6b92dd2514.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1 app-headline>
+        Bookers
+        <i class="fas fa-book-open"></i>
+      </h1>
+    </header>
+    <%= yield %>
+  <footer>
+    <p class="copy-right">©copy right</p>
+  </footer>
+  
+  </body>
+</html>
